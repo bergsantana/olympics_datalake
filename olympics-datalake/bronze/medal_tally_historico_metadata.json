@@ -1,0 +1,58 @@
+{
+  "dataset_name": "medal_tally_historico",
+  "layer": "bronze",
+  "source_dataset": "raw/medal_tally_historico.csv",
+  "schema": [
+    {
+      "column": "year",
+      "dtype": "int64",
+      "non_null_count": 1807
+    },
+    {
+      "column": "edition",
+      "dtype": "object",
+      "non_null_count": 1807
+    },
+    {
+      "column": "edition_id",
+      "dtype": "int64",
+      "non_null_count": 1807
+    },
+    {
+      "column": "country",
+      "dtype": "object",
+      "non_null_count": 1807
+    },
+    {
+      "column": "country_noc",
+      "dtype": "object",
+      "non_null_count": 1807
+    },
+    {
+      "column": "gold",
+      "dtype": "int64",
+      "non_null_count": 1807
+    },
+    {
+      "column": "silver",
+      "dtype": "int64",
+      "non_null_count": 1807
+    },
+    {
+      "column": "bronze",
+      "dtype": "int64",
+      "non_null_count": 1807
+    },
+    {
+      "column": "total",
+      "dtype": "int64",
+      "non_null_count": 1807
+    }
+  ],
+  "transformations_applied": [
+    "Trimming aplicado em 3 colunas string"
+  ],
+  "row_count": 1807,
+  "column_count": 9,
+  "processing_date": "2026-03-30T02:50:31.647504"
+}

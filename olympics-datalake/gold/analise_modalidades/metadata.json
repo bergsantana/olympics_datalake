@@ -1,0 +1,44 @@
+{
+  "dataset_name": "modalidades_summary",
+  "layer": "gold",
+  "source_datasets": [
+    "prata/modalidades_1986_2024"
+  ],
+  "kpi_definitions": {
+    "total_sports": "Número de esportes distintos por edição olímpica.",
+    "total_events": "Número de eventos distintos por edição olímpica."
+  },
+  "aggregation_logic": "COUNT DISTINCT de sport e event agrupados por year/edition.",
+  "assumptions": [
+    "Nomes de esportes e eventos podem variar entre fontes.",
+    "Dados de 2024 refletem apenas eventos com medalhistas."
+  ],
+  "outputs": [
+    "modalidades_summary.csv",
+    "modalidades_plot.png"
+  ],
+  "schema": [
+    {
+      "column": "year",
+      "dtype": "int64",
+      "non_null_count": 56
+    },
+    {
+      "column": "edition",
+      "dtype": "object",
+      "non_null_count": 56
+    },
+    {
+      "column": "total_sports",
+      "dtype": "int64",
+      "non_null_count": 56
+    },
+    {
+      "column": "total_events",
+      "dtype": "int64",
+      "non_null_count": 56
+    }
+  ],
+  "row_count": 56,
+  "processing_date": "2026-03-30T02:50:31.647504"
+}

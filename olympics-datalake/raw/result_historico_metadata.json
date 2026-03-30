@@ -1,0 +1,76 @@
+{
+  "dataset_name": "result_historico",
+  "source": "Olympedia / World Olympic Data",
+  "description": "Detalhes de resultados de eventos olímpicos incluindo localização, formato e descrição.",
+  "main_fields": [
+    "result_id",
+    "event_title",
+    "edition",
+    "sport",
+    "result_date",
+    "result_location"
+  ],
+  "collection_date": "2023-01-01",
+  "observations": "Campo 'result_location' possui 1 valor nulo. Campo 'result_description' pode conter textos longos.",
+  "layer": "raw",
+  "schema": [
+    {
+      "column": "result_id",
+      "dtype": "int64",
+      "non_null_count": 7394
+    },
+    {
+      "column": "event_title",
+      "dtype": "object",
+      "non_null_count": 7394
+    },
+    {
+      "column": "edition",
+      "dtype": "object",
+      "non_null_count": 7394
+    },
+    {
+      "column": "edition_id",
+      "dtype": "int64",
+      "non_null_count": 7394
+    },
+    {
+      "column": "sport",
+      "dtype": "object",
+      "non_null_count": 7394
+    },
+    {
+      "column": "result_date",
+      "dtype": "object",
+      "non_null_count": 7394
+    },
+    {
+      "column": "result_location",
+      "dtype": "object",
+      "non_null_count": 7393
+    },
+    {
+      "column": "result_participants",
+      "dtype": "object",
+      "non_null_count": 7394
+    },
+    {
+      "column": "result_format",
+      "dtype": "object",
+      "non_null_count": 7394
+    },
+    {
+      "column": "result_detail",
+      "dtype": "object",
+      "non_null_count": 7394
+    },
+    {
+      "column": "result_description",
+      "dtype": "object",
+      "non_null_count": 7394
+    }
+  ],
+  "row_count": 7394,
+  "column_count": 11,
+  "processing_date": "2026-03-30T02:50:31.647504"
+}

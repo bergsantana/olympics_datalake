@@ -1,0 +1,77 @@
+{
+  "dataset_name": "olympics_historico",
+  "source": "Olympedia / World Olympic Data",
+  "description": "Resultados individuais de atletas em eventos olímpicos de 1896 a 2022, incluindo edição, país, esporte, evento, posição e medalha.",
+  "main_fields": [
+    "edition",
+    "country_noc",
+    "sport",
+    "event",
+    "athlete",
+    "medal",
+    "position"
+  ],
+  "collection_date": "2023-01-01",
+  "observations": "Campo 'medal' possui ~86% de valores nulos (atletas sem medalha). Dados cobrem Olimpíadas de Verão e Inverno.",
+  "layer": "raw",
+  "schema": [
+    {
+      "column": "edition",
+      "dtype": "object",
+      "non_null_count": 316834
+    },
+    {
+      "column": "edition_id",
+      "dtype": "int64",
+      "non_null_count": 316834
+    },
+    {
+      "column": "country_noc",
+      "dtype": "object",
+      "non_null_count": 316834
+    },
+    {
+      "column": "sport",
+      "dtype": "object",
+      "non_null_count": 316834
+    },
+    {
+      "column": "event",
+      "dtype": "object",
+      "non_null_count": 316834
+    },
+    {
+      "column": "result_id",
+      "dtype": "int64",
+      "non_null_count": 316834
+    },
+    {
+      "column": "athlete",
+      "dtype": "object",
+      "non_null_count": 316834
+    },
+    {
+      "column": "athlete_id",
+      "dtype": "int64",
+      "non_null_count": 316834
+    },
+    {
+      "column": "position",
+      "dtype": "object",
+      "non_null_count": 316834
+    },
+    {
+      "column": "medal",
+      "dtype": "object",
+      "non_null_count": 44687
+    },
+    {
+      "column": "is_team_sport",
+      "dtype": "bool",
+      "non_null_count": 316834
+    }
+  ],
+  "row_count": 316834,
+  "column_count": 11,
+  "processing_date": "2026-03-30T02:50:31.647504"
+}

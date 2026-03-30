@@ -1,0 +1,118 @@
+{
+  "dataset_name": "olympics_paris2024",
+  "layer": "bronze",
+  "source_dataset": "raw/olympics_paris2024.csv",
+  "schema": [
+    {
+      "column": "medal_date",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "medal_type",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "medal_code",
+      "dtype": "float64",
+      "non_null_count": 2314
+    },
+    {
+      "column": "name",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "gender",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "country_code",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "country",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "country_long",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "nationality_code",
+      "dtype": "object",
+      "non_null_count": 2314
+    },
+    {
+      "column": "nationality",
+      "dtype": "object",
+      "non_null_count": 2314
+    },
+    {
+      "column": "nationality_long",
+      "dtype": "object",
+      "non_null_count": 2314
+    },
+    {
+      "column": "team",
+      "dtype": "object",
+      "non_null_count": 1555
+    },
+    {
+      "column": "team_gender",
+      "dtype": "object",
+      "non_null_count": 1555
+    },
+    {
+      "column": "discipline",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "event",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "event_type",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "url_event",
+      "dtype": "object",
+      "non_null_count": 2294
+    },
+    {
+      "column": "birth_date",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "code_athlete",
+      "dtype": "int64",
+      "non_null_count": 2315
+    },
+    {
+      "column": "code_team",
+      "dtype": "object",
+      "non_null_count": 1555
+    },
+    {
+      "column": "is_medallist",
+      "dtype": "bool",
+      "non_null_count": 2315
+    }
+  ],
+  "transformations_applied": [
+    "Trimming aplicado em 18 colunas string"
+  ],
+  "row_count": 2315,
+  "column_count": 21,
+  "processing_date": "2026-03-30T02:50:31.647504"
+}

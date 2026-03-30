@@ -1,0 +1,68 @@
+{
+  "dataset_name": "result_historico",
+  "layer": "bronze",
+  "source_dataset": "raw/result_historico.csv",
+  "schema": [
+    {
+      "column": "result_id",
+      "dtype": "int64",
+      "non_null_count": 7394
+    },
+    {
+      "column": "event_title",
+      "dtype": "object",
+      "non_null_count": 7394
+    },
+    {
+      "column": "edition",
+      "dtype": "object",
+      "non_null_count": 7394
+    },
+    {
+      "column": "edition_id",
+      "dtype": "int64",
+      "non_null_count": 7394
+    },
+    {
+      "column": "sport",
+      "dtype": "object",
+      "non_null_count": 7394
+    },
+    {
+      "column": "result_date",
+      "dtype": "object",
+      "non_null_count": 7394
+    },
+    {
+      "column": "result_location",
+      "dtype": "object",
+      "non_null_count": 7393
+    },
+    {
+      "column": "result_participants",
+      "dtype": "object",
+      "non_null_count": 7394
+    },
+    {
+      "column": "result_format",
+      "dtype": "object",
+      "non_null_count": 7394
+    },
+    {
+      "column": "result_detail",
+      "dtype": "object",
+      "non_null_count": 7394
+    },
+    {
+      "column": "result_description",
+      "dtype": "object",
+      "non_null_count": 7394
+    }
+  ],
+  "transformations_applied": [
+    "Trimming aplicado em 9 colunas string"
+  ],
+  "row_count": 7394,
+  "column_count": 11,
+  "processing_date": "2026-03-30T02:50:31.647504"
+}

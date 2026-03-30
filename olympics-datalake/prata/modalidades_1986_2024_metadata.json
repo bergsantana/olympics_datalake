@@ -1,0 +1,48 @@
+{
+  "dataset_name": "modalidades_1986_2024",
+  "layer": "prata",
+  "source_datasets": [
+    "bronze/olympics_historico",
+    "bronze/olympics_paris2024"
+  ],
+  "join_logic": "UNION de sport/event únicos do histórico (athlete_event_result) com discipline/event de Paris 2024 (medallists). Renomeado 'discipline' para 'sport' na unificação.",
+  "derived_fields": [
+    "year (extraído da edição)",
+    "source (historico/paris2024)"
+  ],
+  "data_quality_notes": "Deduplicação aplicada. Nomes de esportes podem diferir entre fontes.",
+  "schema": [
+    {
+      "column": "year",
+      "dtype": "int64",
+      "non_null_count": 7431
+    },
+    {
+      "column": "edition",
+      "dtype": "object",
+      "non_null_count": 7431
+    },
+    {
+      "column": "edition_id",
+      "dtype": "int64",
+      "non_null_count": 7431
+    },
+    {
+      "column": "sport",
+      "dtype": "object",
+      "non_null_count": 7431
+    },
+    {
+      "column": "event",
+      "dtype": "object",
+      "non_null_count": 7431
+    },
+    {
+      "column": "source",
+      "dtype": "object",
+      "non_null_count": 7431
+    }
+  ],
+  "row_count": 7431,
+  "processing_date": "2026-03-30T02:50:31.647504"
+}

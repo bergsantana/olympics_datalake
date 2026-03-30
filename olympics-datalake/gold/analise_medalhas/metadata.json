@@ -1,0 +1,69 @@
+{
+  "dataset_name": "medalhas_summary",
+  "layer": "gold",
+  "source_datasets": [
+    "prata/medalhas_1986_2024"
+  ],
+  "kpi_definitions": {
+    "ranking": "Posicao no ranking global (ouro > prata > bronze > total).",
+    "gold": "Total acumulado de medalhas de ouro (1896-2024).",
+    "silver": "Total acumulado de medalhas de prata (1896-2024).",
+    "bronze": "Total acumulado de medalhas de bronze (1896-2024).",
+    "total": "Soma de todas as medalhas.",
+    "editions_participated": "Edicoes olimpicas com pelo menos 1 medalha."
+  },
+  "aggregation_logic": "SUM gold/silver/bronze/total por country_noc. COUNT DISTINCT edition. Ranking por gold DESC.",
+  "assumptions": [
+    "Dados de 2024 baseados em medalhas individuais agregadas.",
+    "Codigos NOC podem mudar ao longo do tempo (USSR/RUS/ROC/AIN).",
+    "Ranking segue convencao olimpica: prioridade para ouro."
+  ],
+  "outputs": [
+    "medalhas_summary.csv",
+    "medalhas_plot.png"
+  ],
+  "schema": [
+    {
+      "column": "ranking",
+      "dtype": "int64",
+      "non_null_count": 160
+    },
+    {
+      "column": "country_noc",
+      "dtype": "object",
+      "non_null_count": 160
+    },
+    {
+      "column": "country",
+      "dtype": "object",
+      "non_null_count": 154
+    },
+    {
+      "column": "gold",
+      "dtype": "int64",
+      "non_null_count": 160
+    },
+    {
+      "column": "silver",
+      "dtype": "int64",
+      "non_null_count": 160
+    },
+    {
+      "column": "bronze",
+      "dtype": "int64",
+      "non_null_count": 160
+    },
+    {
+      "column": "total",
+      "dtype": "int64",
+      "non_null_count": 160
+    },
+    {
+      "column": "editions_participated",
+      "dtype": "int64",
+      "non_null_count": 160
+    }
+  ],
+  "row_count": 160,
+  "processing_date": "2026-03-30T02:40:19.914704"
+}

@@ -1,0 +1,87 @@
+{
+  "dataset_name": "medals_paris2024",
+  "source": "Kaggle / Paris 2024 Olympics Dataset",
+  "description": "Quadro de medalhas das Olimpíadas de Paris 2024 com tipo, data, atleta, disciplina e país.",
+  "main_fields": [
+    "medal_type",
+    "medal_date",
+    "name",
+    "gender",
+    "discipline",
+    "event",
+    "country_code"
+  ],
+  "collection_date": "2024-08-15",
+  "observations": "1044 registros. Campo 'url_event' possui 9 nulos.",
+  "layer": "raw",
+  "schema": [
+    {
+      "column": "medal_type",
+      "dtype": "object",
+      "non_null_count": 1044
+    },
+    {
+      "column": "medal_code",
+      "dtype": "float64",
+      "non_null_count": 1043
+    },
+    {
+      "column": "medal_date",
+      "dtype": "object",
+      "non_null_count": 1044
+    },
+    {
+      "column": "name",
+      "dtype": "object",
+      "non_null_count": 1044
+    },
+    {
+      "column": "gender",
+      "dtype": "object",
+      "non_null_count": 1044
+    },
+    {
+      "column": "discipline",
+      "dtype": "object",
+      "non_null_count": 1044
+    },
+    {
+      "column": "event",
+      "dtype": "object",
+      "non_null_count": 1044
+    },
+    {
+      "column": "event_type",
+      "dtype": "object",
+      "non_null_count": 1044
+    },
+    {
+      "column": "url_event",
+      "dtype": "object",
+      "non_null_count": 1035
+    },
+    {
+      "column": "code",
+      "dtype": "object",
+      "non_null_count": 1044
+    },
+    {
+      "column": "country_code",
+      "dtype": "object",
+      "non_null_count": 1044
+    },
+    {
+      "column": "country",
+      "dtype": "object",
+      "non_null_count": 1044
+    },
+    {
+      "column": "country_long",
+      "dtype": "object",
+      "non_null_count": 1044
+    }
+  ],
+  "row_count": 1044,
+  "column_count": 13,
+  "processing_date": "2026-03-30T02:50:31.647504"
+}

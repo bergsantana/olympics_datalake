@@ -1,0 +1,68 @@
+{
+  "dataset_name": "medal_tally_historico",
+  "source": "Olympedia / World Olympic Data",
+  "description": "Quadro de medalhas por país e edição olímpica de 1896 a 2022.",
+  "main_fields": [
+    "year",
+    "edition",
+    "country",
+    "country_noc",
+    "gold",
+    "silver",
+    "bronze",
+    "total"
+  ],
+  "collection_date": "2023-01-01",
+  "observations": "1807 registros sem valores nulos. Dados completos e consistentes.",
+  "layer": "raw",
+  "schema": [
+    {
+      "column": "year",
+      "dtype": "int64",
+      "non_null_count": 1807
+    },
+    {
+      "column": "edition",
+      "dtype": "object",
+      "non_null_count": 1807
+    },
+    {
+      "column": "edition_id",
+      "dtype": "int64",
+      "non_null_count": 1807
+    },
+    {
+      "column": "country",
+      "dtype": "object",
+      "non_null_count": 1807
+    },
+    {
+      "column": "country_noc",
+      "dtype": "object",
+      "non_null_count": 1807
+    },
+    {
+      "column": "gold",
+      "dtype": "int64",
+      "non_null_count": 1807
+    },
+    {
+      "column": "silver",
+      "dtype": "int64",
+      "non_null_count": 1807
+    },
+    {
+      "column": "bronze",
+      "dtype": "int64",
+      "non_null_count": 1807
+    },
+    {
+      "column": "total",
+      "dtype": "int64",
+      "non_null_count": 1807
+    }
+  ],
+  "row_count": 1807,
+  "column_count": 9,
+  "processing_date": "2026-03-30T02:50:31.647504"
+}

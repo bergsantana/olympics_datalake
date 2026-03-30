@@ -1,0 +1,69 @@
+{
+  "dataset_name": "olympics_historico",
+  "layer": "bronze",
+  "source_dataset": "raw/olympics_historico.csv",
+  "schema": [
+    {
+      "column": "edition",
+      "dtype": "object",
+      "non_null_count": 315626
+    },
+    {
+      "column": "edition_id",
+      "dtype": "int64",
+      "non_null_count": 315626
+    },
+    {
+      "column": "country_noc",
+      "dtype": "object",
+      "non_null_count": 315626
+    },
+    {
+      "column": "sport",
+      "dtype": "object",
+      "non_null_count": 315626
+    },
+    {
+      "column": "event",
+      "dtype": "object",
+      "non_null_count": 315626
+    },
+    {
+      "column": "result_id",
+      "dtype": "int64",
+      "non_null_count": 315626
+    },
+    {
+      "column": "athlete",
+      "dtype": "object",
+      "non_null_count": 315626
+    },
+    {
+      "column": "athlete_id",
+      "dtype": "int64",
+      "non_null_count": 315626
+    },
+    {
+      "column": "position",
+      "dtype": "object",
+      "non_null_count": 315626
+    },
+    {
+      "column": "medal",
+      "dtype": "object",
+      "non_null_count": 44686
+    },
+    {
+      "column": "is_team_sport",
+      "dtype": "bool",
+      "non_null_count": 315626
+    }
+  ],
+  "transformations_applied": [
+    "Trimming aplicado em 7 colunas string",
+    "1208 linhas duplicadas removidas"
+  ],
+  "row_count": 315626,
+  "column_count": 11,
+  "processing_date": "2026-03-30T02:50:31.647504"
+}

@@ -1,0 +1,126 @@
+{
+  "dataset_name": "olympics_paris2024",
+  "source": "Kaggle / Paris 2024 Olympics Dataset",
+  "description": "Medalhistas individuais das Olimpíadas de Paris 2024, incluindo dados de disciplina, evento, país e informações do atleta.",
+  "main_fields": [
+    "medal_type",
+    "name",
+    "gender",
+    "country_code",
+    "discipline",
+    "event"
+  ],
+  "collection_date": "2024-08-15",
+  "observations": "Campos 'team', 'team_gender' e 'code_team' são nulos para eventos individuais (~33% dos registros).",
+  "layer": "raw",
+  "schema": [
+    {
+      "column": "medal_date",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "medal_type",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "medal_code",
+      "dtype": "float64",
+      "non_null_count": 2314
+    },
+    {
+      "column": "name",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "gender",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "country_code",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "country",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "country_long",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "nationality_code",
+      "dtype": "object",
+      "non_null_count": 2314
+    },
+    {
+      "column": "nationality",
+      "dtype": "object",
+      "non_null_count": 2314
+    },
+    {
+      "column": "nationality_long",
+      "dtype": "object",
+      "non_null_count": 2314
+    },
+    {
+      "column": "team",
+      "dtype": "object",
+      "non_null_count": 1555
+    },
+    {
+      "column": "team_gender",
+      "dtype": "object",
+      "non_null_count": 1555
+    },
+    {
+      "column": "discipline",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "event",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "event_type",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "url_event",
+      "dtype": "object",
+      "non_null_count": 2294
+    },
+    {
+      "column": "birth_date",
+      "dtype": "object",
+      "non_null_count": 2315
+    },
+    {
+      "column": "code_athlete",
+      "dtype": "int64",
+      "non_null_count": 2315
+    },
+    {
+      "column": "code_team",
+      "dtype": "object",
+      "non_null_count": 1555
+    },
+    {
+      "column": "is_medallist",
+      "dtype": "bool",
+      "non_null_count": 2315
+    }
+  ],
+  "row_count": 2315,
+  "column_count": 21,
+  "processing_date": "2026-03-30T02:50:31.647504"
+}

@@ -1,0 +1,51 @@
+{
+  "dataset_name": "genero_summary",
+  "layer": "gold",
+  "source_datasets": [
+    "prata/atletas_por_sexo"
+  ],
+  "kpi_definitions": {
+    "total_participations": "Total de participações em eventos (um atleta em múltiplos eventos = múltiplas participações).",
+    "unique_athletes": "Número de atletas distintos.",
+    "total_medals": "Total de medalhas conquistadas."
+  },
+  "aggregation_logic": "SUM de participações, atletas e medalhas por year/gender. Filtrado apenas para Jogos de Verão.",
+  "assumptions": [
+    "Gênero do histórico é inferido a partir dos nomes de eventos (Men/Women/Ladies).",
+    "Eventos mistos são excluídos da visualização.",
+    "Dados de 2024 usam campo 'gender' diretamente."
+  ],
+  "outputs": [
+    "genero_summary.csv",
+    "genero_plot.png"
+  ],
+  "schema": [
+    {
+      "column": "year",
+      "dtype": "int64",
+      "non_null_count": 59
+    },
+    {
+      "column": "gender",
+      "dtype": "object",
+      "non_null_count": 59
+    },
+    {
+      "column": "total_participations",
+      "dtype": "int64",
+      "non_null_count": 59
+    },
+    {
+      "column": "unique_athletes",
+      "dtype": "int64",
+      "non_null_count": 59
+    },
+    {
+      "column": "total_medals",
+      "dtype": "int64",
+      "non_null_count": 59
+    }
+  ],
+  "row_count": 59,
+  "processing_date": "2026-03-30T02:50:31.647504"
+}

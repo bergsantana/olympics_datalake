@@ -1,0 +1,62 @@
+{
+  "dataset_name": "medalhas_1986_2024",
+  "layer": "prata",
+  "source_datasets": [
+    "bronze/medal_tally_historico",
+    "bronze/medals_paris2024"
+  ],
+  "join_logic": "UNION dos quadros de medalhas histórico e Paris 2024 com colunas comuns (year, edition, country_noc, gold, silver, bronze, total). Paris 2024 foi agregado por country_code.",
+  "derived_fields": [
+    "Nenhum campo derivado adicional"
+  ],
+  "data_quality_notes": "Deduplicação aplicada. Dados de 2024 agregados a partir de medalhas individuais.",
+  "schema": [
+    {
+      "column": "country",
+      "dtype": "object",
+      "non_null_count": 1807
+    },
+    {
+      "column": "year",
+      "dtype": "int64",
+      "non_null_count": 1899
+    },
+    {
+      "column": "edition",
+      "dtype": "object",
+      "non_null_count": 1899
+    },
+    {
+      "column": "edition_id",
+      "dtype": "int64",
+      "non_null_count": 1899
+    },
+    {
+      "column": "country_noc",
+      "dtype": "object",
+      "non_null_count": 1899
+    },
+    {
+      "column": "gold",
+      "dtype": "int64",
+      "non_null_count": 1899
+    },
+    {
+      "column": "silver",
+      "dtype": "int64",
+      "non_null_count": 1899
+    },
+    {
+      "column": "bronze",
+      "dtype": "int64",
+      "non_null_count": 1899
+    },
+    {
+      "column": "total",
+      "dtype": "int64",
+      "non_null_count": 1899
+    }
+  ],
+  "row_count": 1899,
+  "processing_date": "2026-03-30T02:50:31.647504"
+}

@@ -1,0 +1,156 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Olympic Data Lake Metadata Schema",
+  "description": "Schema padrão para todos os arquivos de metadados do Data Lake Olímpico.",
+  "type": "object",
+  "required": [
+    "dataset_name",
+    "layer",
+    "processing_date"
+  ],
+  "properties": {
+    "dataset_name": {
+      "type": "string",
+      "description": "Nome identificador do dataset."
+    },
+    "layer": {
+      "type": "string",
+      "enum": [
+        "raw",
+        "bronze",
+        "prata",
+        "gold"
+      ],
+      "description": "Camada do Data Lake onde o dataset reside."
+    },
+    "schema": {
+      "type": "array",
+      "description": "Lista de colunas com tipos e contagem de não-nulos.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "column": {
+            "type": "string"
+          },
+          "dtype": {
+            "type": "string"
+          },
+          "non_null_count": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "source": {
+      "type": "string",
+      "description": "Fonte original dos dados."
+    },
+    "source_datasets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Datasets de origem (para camadas derivadas)."
+    },
+    "description": {
+      "type": "string",
+      "description": "Descrição do dataset."
+    },
+    "main_fields": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Campos principais do dataset."
+    },
+    "transformations_applied": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Lista de transformações aplicadas."
+    },
+    "join_logic": {
+      "type": "string",
+      "description": "Lógica de JOIN utilizada (camadas prata/gold)."
+    },
+    "derived_fields": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Campos derivados/calculados."
+    },
+    "data_quality_notes": {
+      "type": "string",
+      "description": "Notas sobre qualidade dos dados."
+    },
+    "quality_checks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Validações de qualidade aplicadas."
+    },
+    "lineage": {
+      "type": "object",
+      "description": "Informações de linhagem do dataset.",
+      "properties": {
+        "upstream": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "downstream": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "kpi_definitions": {
+      "type": "object",
+      "description": "Definições de KPIs (camada gold)."
+    },
+    "aggregation_logic": {
+      "type": "string",
+      "description": "Lógica de agregação utilizada."
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Premissas e considerações."
+    },
+    "row_count": {
+      "type": "integer",
+      "description": "Número de linhas no dataset."
+    },
+    "column_count": {
+      "type": "integer",
+      "description": "Número de colunas no dataset."
+    },
+    "collection_date": {
+      "type": "string",
+      "description": "Data de coleta dos dados originais."
+    },
+    "processing_date": {
+      "type": "string",
+      "description": "Data/hora de processamento."
+    },
+    "observations": {
+      "type": "string",
+      "description": "Observações adicionais."
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Arquivos de saída produzidos."
+    }
+  }
+}

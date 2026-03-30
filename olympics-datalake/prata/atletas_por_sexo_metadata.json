@@ -1,0 +1,56 @@
+{
+  "dataset_name": "atletas_por_sexo",
+  "layer": "prata",
+  "source_datasets": [
+    "bronze/olympics_historico",
+    "bronze/olympics_paris2024"
+  ],
+  "join_logic": "UNION de agregações por gênero/ano. Gênero inferido de nomes de eventos (Men/Women/Ladies) no histórico e campo 'gender' em 2024.",
+  "derived_fields": [
+    "gender (inferido do evento no histórico)",
+    "has_medal",
+    "unique_athletes",
+    "total_participations",
+    "total_medals"
+  ],
+  "data_quality_notes": "Gênero do histórico é inferido e pode conter 'Mixed/Unknown' para eventos mistos. Deduplicação aplicada.",
+  "schema": [
+    {
+      "column": "year",
+      "dtype": "int64",
+      "non_null_count": 162
+    },
+    {
+      "column": "edition",
+      "dtype": "object",
+      "non_null_count": 162
+    },
+    {
+      "column": "gender",
+      "dtype": "object",
+      "non_null_count": 162
+    },
+    {
+      "column": "total_participations",
+      "dtype": "int64",
+      "non_null_count": 162
+    },
+    {
+      "column": "unique_athletes",
+      "dtype": "int64",
+      "non_null_count": 162
+    },
+    {
+      "column": "total_medals",
+      "dtype": "int64",
+      "non_null_count": 162
+    },
+    {
+      "column": "source",
+      "dtype": "object",
+      "non_null_count": 162
+    }
+  ],
+  "row_count": 162,
+  "processing_date": "2026-03-30T02:50:31.647504"
+}
